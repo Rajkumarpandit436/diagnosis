@@ -1,0 +1,430 @@
+body{
+    font-family: 'Robot', sans-serif;
+}
+.nav-back{
+    background: rgba(17, 219, 207, 0.5);
+    
+}
+.navbar-brand{
+    color: #000;
+    font-weight: bold;
+}
+.navbar-brand:hover{
+    color: white;
+}
+.nav-link{
+    color: #000;
+}
+.nav-link:hover{
+    color: #fff;
+}
+.navbar-toggler{
+    outline: none!important;
+}
+
+
+/*image section*/
+
+#hero{
+    width: 100%;
+    height: 80vh;
+    background: url(image/image4.jpg) center;
+    background-size: cover;
+}
+
+#hero .container{
+    padding: 80px;
+}
+#hero:before{
+    content:"";
+    background: rgba(0, 0, 0, 0.6);
+    position: absolute;
+    bottom: 0px;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    height: 80vh;
+}
+
+#hero h1{
+    margin: 0 0 10px 0;
+    font-size: 48px;
+    font-weight: bolds;
+    line-height: 56px;
+    color: white;
+}
+
+#hero h2{
+    color: white;
+    margin-bottom: 40px;
+    font-size: 15px;
+    font-weight: light;
+    letter-spacing: 0.5px;
+    
+}
+
+.main-btn{
+    font-weight: bold;
+    font-size: 15px;
+    letter-spacing: 1px;
+    display: inline-block;
+    padding: 8px 28px;
+    border-radius: 50px;
+    transition: 0.5s;
+    margin: 10px;
+    border: 2px solid white;
+    color: white;
+}
+
+.main-btn:hover{
+    background: #11dbcf;
+    border: 2px solid #11dbcf;
+    text-decoration: none;
+    color: white;
+}
+
+/* services */
+.ourservice{
+    text-align: center;
+    background: rgba(17, 219, 207, 0.5);
+    padding: 20px 10px 20px;
+    box-shadow: rgba(17, 219, 207, 0.5);
+}
+
+.service .icon{
+    margin: 0 auto;
+    width: 64px;
+    height: 64px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    background: white;
+    border-radius: 50px;
+}
+
+.shadow:hover{
+    background: lightblue;
+    border-radius: 30px;
+}
+
+.service h4{
+    margin: 10px 0 15px 0;
+    font-weight: bold;
+    font-size: 22px;
+}
+
+.service p{
+    line-height: 24px;
+    font-size: 14px;
+    margin-bottom: 0;
+}
+
+/* about section*/
+
+.about-section{
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.about-hading{
+    text-transform: uppercase;
+}
+
+.about-hading-upper{
+    display: block;
+    font-size: 60px;
+    font-weight: bold;
+
+}
+
+.about-hading-lower{
+    display: block;
+    font-size: 38px;
+    font-weight: lighter;
+}
+
+.bg-faded{
+    background: rgba(17, 2019, 207, 0.5);
+}
+
+.about-btn .btn-color{
+    background: #03859a;
+    color: white;
+    font-weight: bold;
+}
+
+.about{
+    position: relative;
+}
+
+
+
+
+@media screen and (min-width:992px){
+    .about .about-img{
+        width: 75%;
+        float: right;
+        overflow: hidden;
+
+    }
+
+    .about .about-text{
+        left:0;
+        width:60px;
+        margin-top: 3rem;
+        position: absolute;
+    }
+
+    .about .about-text .about-btn{
+        width: 100%;
+        left: 0;
+        position: absolute;
+        bottom: -2rem;
+    }
+
+    
+}
+
+@media screen and(min-width:1200px){
+    .about .about-text{
+        width: 45%;
+    }
+}
+
+/*end of about section*/
+
+/* camp section*/
+.camp{
+    background-color: white;
+    padding-bottom: 0;
+
+}
+
+.camp h2{
+    color:#000;
+    margin-bottom: 25px;
+
+}
+
+.camp-grid{
+    margin-top: 65px;
+}
+
+.camp-grid .row{
+    margin: 0%;
+}
+
+ img {
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: .3s ease;
+  backface-visibility: hidden;
+}
+
+.card-block{
+    box-shadow: rgba(17, 219, 207, 0.5);
+    position: relative;
+}
+.camp-text {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.card-block:hover img{
+  opacity: 0.5;
+}
+
+.card-block:hover .camp-text {
+  opacity: 1;
+}
+
+
+.text {
+  background-color: #04AA6D;
+  color: white;
+  font-size: 16px;
+  padding: 16px 32px;
+}
+
+/* end of camp section*/
+
+/* start of team section*/
+
+.team{
+    background: white;
+
+}
+
+.team .member{
+    position: relative;
+    box-shadow: 1px 2px 15px rgba(17, 219, 207, 0.5);
+    padding: 30px;
+    border-radius: 10px;
+    text-align: center;
+
+}
+
+.team .member .image{
+    overflow: hidden;
+    width: 150px;
+    border-radius: 50%;
+    margin: 0 auto 20px auto;
+    
+}
+
+.team .member .image img{
+
+    transition: ease-in-out 0.3s;
+
+}
+
+.team .member:hover img{
+
+    transform: scale(1.1);
+   
+}
+
+.team .member h4{
+
+    font-weight: bold;
+    margin-bottom: 5px;
+    font-size: 20px;
+    color: #000;
+}
+
+.team .member span{
+
+    display: block;
+    font-size: 15px;
+    padding-bottom: 10px;
+    position: relative;
+    font-weight: bold;
+}
+
+.team .member span::after{
+    content: "";
+    position: absolute;
+    display: block;
+    width: 50px;
+    height: 1px;
+    background: #b5b3ba;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.team .member p{
+    margin: 10px 0 0 0;
+    font-size: 14px;
+}
+
+.team .social{
+    margin-top: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.team .social a{
+    transition: ease-in-out 0.3s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50px;
+    width: 32px;
+    height: 32px;
+    background: #11dbcf;
+    margin-left: 8px;
+}
+
+.team .member .social a i{
+    color: white;
+    font-size: 16px;
+    margin: 0 2px;
+
+}
+
+.team .social a:hover{
+    background: #00eeff;
+}
+
+
+/* ensd of team section*/
+
+/*start of contact section*/
+.contact-box{
+    color: #000;
+    text-align: center;
+    box-shadow: rgba(17, 219, 207, 0.5);
+    padding: 20px 0 30px 0;
+    background: #11dbcf;
+}
+
+.contact-box i{
+    font-size: 32px;
+    color: white;
+    border-radius: 50%;
+}
+
+.contact-box h{
+    font-size: 20px;
+    color: #000;
+    font-weight: bold;
+    margin: 10px 0;
+
+}
+
+.contact-box p{
+    padding: 0;
+    line-height: 24px;
+    margin-bottom: 0;
+    font-size: 14px;
+}
+
+.contact button{
+    background: #11dbcf;
+    color: white;
+    border: none;
+    padding: 10px;
+
+}
+
+
+/*end of contact section*/
+
+/*footer*/
+
+.footer{
+    text-align: center;
+    font-size: 15px;
+    background: rgba(17, 2019, 207, 0.5);
+
+}
+
+.footer .btn-back{
+    background: white;
+    color: #00d9ff;
+}
+
+.footer .text{
+    color: #000;
+}
+
+.btn-social i{
+    font-size: 22px;
+   
+}
+
+.btn-social a:hover{
+    
+    background: #00eeff;
+}
